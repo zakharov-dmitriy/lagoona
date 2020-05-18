@@ -1,0 +1,349 @@
+body {
+   font-family: 'Muller';
+   font-weight: 400;
+   background: #f1f1f1;
+}
+
+.container {
+   width: 100%;
+   max-width: 1170px;
+   margin: 0 auto;
+}
+
+/* HEADER========================= */
+.header__inner {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 30px 0;
+}
+.header__phone {
+   flex: 1 1 auto;
+   margin-left: 25px;
+
+   font-weight: 700;
+   font-size: 22px;
+   line-height: 1.45;
+   color: #666666;
+}
+.header__link {
+   position: relative;
+   padding-left: 20px;
+   font-size: 16px;
+   line-height: 2;
+   color: #cc9933;
+}
+.header__link::before {
+   content: "";
+   position: absolute;
+   left: 0;
+   top: 25%;
+   width: 14px;
+   height: 15px;
+   background: url(../img/arrow.png);
+}
+
+/* HEADER-MENU==================== */
+.menu {
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 20px;
+
+   background: #ffffff;
+   border-radius: 12px;
+}
+.menu__list {
+   display: flex;
+   justify-content: space-between;
+   flex-basis: 60%;
+   padding: 27px 0;
+}
+.menu__item {
+   font-size: 16px;
+   line-height: 1;
+}
+.menu__item-link {
+   color: #333333;
+   display: block;
+   height: 100%;
+}
+.menu__input {
+   width: 355px;
+   height: 48px;
+   padding: 0 20px;
+   font-size: 16px;
+   color: #333333;
+   background: #f1f1f1;
+   border-radius: 15px;
+}
+.menu__input::placeholder {
+   font-size: 14px;
+   line-height: 2;
+   color:#bebebe; 
+}
+.search {
+   position: absolute;
+   right: 40px;
+   top: 25px;
+   background: url(../img/search.png) no-repeat;
+   width: 22px;
+   height: 22px;
+   opacity: .7;
+}
+
+/* RESERVATION==================== */
+.reservation__inner {
+   display: flex;
+   justify-content: space-between;
+}
+.title {
+   margin: 70px 0 23px 44px;
+
+   font-size: 40px;
+   color: #333333;
+}
+.reservation__form {
+   display: flex;
+   flex-direction: column;
+   width: 520px;
+}
+.form__input {
+   margin-bottom: 24px;
+   padding: 27px 20px;
+
+   font-size: 16px;
+   color: #333333;
+   background: #fff;
+
+   border-radius: 12px;
+}
+.form__input::placeholder{
+   color: #999999;
+}
+.reservation__btn {
+   padding: 27px 30px;
+
+   font-size: 16px;
+   font-weight: 700;
+   color: #ffffff;
+
+   background: #cc9933;
+   border-radius: 12px;
+}
+
+.offers {
+   display: inline-block;
+   margin-left: 30px;
+   color: #999;
+}
+.number {
+   color: #cc9933;
+}
+.reservation__offer {
+   position: relative;
+}
+.reservation__offer-img,
+.img {
+   border-radius: 12px;
+}
+.offer__info {
+   position: absolute;
+   left: 40px;
+   bottom: 35px;
+}
+.offer__title {
+   width: 340px;
+   margin-bottom: 32px;
+
+   font-size: 66px;
+   line-height: 0.87;
+   font-weight: 700;
+   color: #ffffff;
+}
+.offer__price {
+   margin: 32px 40px 0 0;
+
+   font-size: 35px;
+   color: #ffffff;
+   opacity: 0.5;
+}
+.offer__link {
+   position: relative;
+   padding-right: 15px;
+
+   font-size: 16px;
+   color: #ffcc66;
+}
+.offer__link::after {
+   content: "";
+   position: absolute;
+   right: 0;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 9px;
+   height: 16px;
+   background: url(../img/decor.png);
+}
+
+/* ABOUT======================= */
+.about__text {
+   margin-left: 44px;
+   width: 85%;
+
+   font-size: 16px;
+   line-height: 2;
+   color: #666;
+}
+/* SERVICES==================== */
+.services__inner {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+.services__item {
+   max-width: 572px;
+   margin-bottom: 24px;
+   
+   background: #ffffff;
+   border-radius: 12px;
+}
+.services__img {
+   border-top-left-radius: 12px;
+   border-top-right-radius: 12px;
+}
+
+.services__link {
+   display: inline-block;
+   position: relative;
+   padding: 40px 25px 0 44px;
+
+   font-size: 22px;
+   line-height: 1.45;
+   color: #cc9933;
+}
+.services__link::after {
+   content: "";
+   position: absolute;
+   right: 0;
+   top: 65%;
+   width: 9px;
+   height: 16px;
+   background: url(../img/decor.png);
+}
+.services__dscription {
+   width: 78%;
+   padding-left: 44px;
+   padding-bottom: 40px;
+
+   font-size: 16px;
+   line-height: 2;
+   color: #333333;
+}
+/* ADVANTAGES==================== */
+.advantages__inner {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+.advantages__item {
+   flex: 0 1 23.5%;
+   margin-bottom: 24px;
+   padding: 40px 44px;
+
+   background: #ffffff;
+   border-radius: 12px;
+}
+.advantages__icon {
+   padding-bottom: 20px;
+}
+.advantages__text {
+   font-size: 16px;
+   line-height: 2;
+   color: #333333;
+}
+
+/* ACCOMMODATION==================== */
+.accommodation__inner {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+.accommodation__item {
+   position: relative;
+   flex: 0 1 30%;
+   margin-bottom: 24px;
+   min-height: 441px;
+
+   background: #ffffff;
+   border-radius: 12px;
+   user-select: none;
+}
+.accommodation__img {
+   border-top-left-radius: 12px;
+   border-top-right-radius: 12px;
+}
+.accommodation__list {
+   padding: 36px 44px 15px 43px;
+   position: relative;
+
+   font-size: 16px;
+   line-height: 2;
+   color: #333333;
+}
+.accommodation__list li {
+   display: flex;
+   justify-content: space-between;
+}
+.stars:not(:last-child) {
+   padding-right: 7px;
+}
+.star {
+   display: inline-block;
+   background: url(../img/star-empty.png);
+   width: 14px;
+   height: 13px;
+}
+.star:hover {
+   background: url(../img/star.png);
+}
+.star--active {
+   background: url(../img/star.png);
+}
+.accommodation__list span {
+   color: #999999;
+}
+.accommodation__btn {
+   padding: 13px 20px;
+   margin-left: 44px;
+
+   font-weight: 700;
+   color: #cc9933;
+
+   border: 1px solid #cc9933;
+   border-radius: 12px;
+}
+.accommodation__btn:hover {
+   background: #cc9933;
+   color: #ffffff;
+}
+.accommodation__link {
+   position: absolute;
+   padding-right: 25px;
+   left: 38px;
+   bottom: 50px;
+
+   font-size: 22px;
+   color: #ffffff;
+}
+.accommodation__link::after {
+   content: "";
+   position: absolute;
+   right: 0;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 9px;
+   height: 16px;
+   background: url(../img/decor-white.png);
+}
