@@ -4,6 +4,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- <base target="_blank"> -->
    <title>Lagoona</title>
    <link rel="stylesheet" href="css/fonts.css">
    <link rel="stylesheet" href="css/zeroing.css">
@@ -53,7 +54,7 @@
          <div class="container">
             <div class="reservation__inner">
                <div class="reservation__item">
-                  <h2 class="reservation__title title">Быстрая бронь</h2>
+                  <h3 class="reservation__title title">Быстрая бронь</h3>
                   <form class="reservation__form">
                      <input class="form__input" type="text" placeholder="Город">
                      <input class="form__input" type="text" placeholder="Категория номера">
@@ -71,7 +72,7 @@
                </div>
 
                <div class="reservation__item">
-                  <h2 class="reservation__title title">Спецпредложение</h2>
+                  <h3 class="reservation__title title">Спецпредложение</h3>
                   <div class="reservation__offer">
                      <img class="reservation__offer-img img" src="img/image1.jpg" alt="Offer">
 
@@ -88,7 +89,7 @@
       <!-- О НАС=========================== -->
       <section class="about">
          <div class="container">
-            <h2 class="about__tiile title">О Нас</h2>
+            <h3 class="about__tiile title">О Нас</h3>
             <p class="about__text">
                Идейные соображения высшего порядка, а также сложившаяся структура организации влечет за собой процесс
                внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Идейные
@@ -102,7 +103,7 @@
       <!-- УСЛУГИ========================== -->
       <section class="services">
          <div class="container">
-            <h2 class="services__title title">Услуги</h2>
+            <h3 class="services__title title">Услуги</h3>
             <ul class="services__inner">
                <li class="services__item">
                   <img class="services__img" src="img/services-1.jpg" alt="Services">
@@ -138,7 +139,7 @@
       <!-- ПРЕИМУЩЕСТВА==================== -->
       <section class="advantages">
          <div class="container">
-            <h2 class="advantages__title title">Преимущества</h2>
+            <h3 class="advantages__title title">Преимущества</h3>
             <ul class="advantages__inner">
                <li class="advantages__item">
                   <img class="advantages__icon" src="img/icon_1.svg" alt="Icon">
@@ -194,7 +195,7 @@
       <!-- РАЗМЕЩЕНИЕ====================== -->
       <section class="accommodation">
          <div class="container">
-            <h2 class="accommodation__title title">Размещение</h2>
+            <h3 class="accommodation__title title">Размещение</h3>
             <ul class="accommodation__inner">
                <li class="accommodation__item">
                   <img class="accommodation__img" src="img/hotel-1.jpg" alt="Hotel">
@@ -366,10 +367,102 @@
       <!-- КОНТАКТЫ======================== -->
       <section class="contacts">
          <div class="container">
-            <h2 class="contacts__title title">Контакты</h2>
+            <div class="contacts__inner">
+               <div class="contacts__item">
+                  <h3 class="contacts__title title">Контакты</h3>
+                  <div class="contacts__body">
+                     <div class="contacts__row">
+                        <h4 class="contacts__row-title">Адрес</h4>
+                        <div class="contacts__row-item">
+                           Москва, улица Юности, дом 5 строение 4, офис 2
+                        </div>
+                     </div>
+                     <div class="contacts__row">
+                        <h4 class="contacts__row-title">Телефоны</h4>
+                        <div class="contacts__row-item">
+                           <a class="phone-link" href="tel:+74995356434">+7 (499) 535-64-34</a>
+                           <a class="phone-link" href="tel:+74950050544">+7 (495) 005-05-44</a>
+                        </div>
+                     </div>
+                     <div class="contacts__row">
+                        <h4 class="contacts__row-title">E-mail</h4>
+                        <div class="contacts__row-item">
+                           <a class="email-link" href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a>
+                           <span>по вопросам бронирования</span>
+                           <a class="email-link" href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a>
+                           <span>по вопросам сотрудничества</span>
+                        </div>
+                     </div>
+                     <div class="contacts__row">
+                        <h4 class="contacts__row-title">График</h4>
+                        <div class="contacts__row-item">
+                           Понедельник - пятница, с 10:00 до 19:00
+                        </div>
+                     </div>
+                     <button class="contacts__btn">Построить маршрут</button>
+                  </div>
+               </div>
+
+               <div class="contacts__item form">
+                  <h3 class="contacts__title title">Напишите нам</h3>
+                  <form class="contacts__form" action="https://jsonplaceholder.typicode.com/posts" method="POST"
+                     autocomplete="on">
+                     <input class="form__item" type="text" required name="name" placeholder="Имя">
+                     <input class="form__item" type="tel" required name="phone number" placeholder="+7">
+                     <textarea class="form__item" required name="message" placeholder="Сообщение..." minlength="0"
+                        maxlength="500"></textarea>
+                     <button class="form__btn" type="submit">Отправить</button>
+                  </form>
+               </div>
+            </div>
          </div>
       </section>
    </main>
+
+   <footer>
+      <div class="container">
+         <div class="footer__inner">
+            <div class="copyright">
+               <p class="footer__text">
+                  &#169; 2012-2020 Управляющая компания Объединенной сети «Лагуна Хотелс»
+               </p>
+               <p class="footer__text">
+                  Представленная на сайте информация носит справочный характер и не является публичной офертой
+               </p>
+               <a class="footer__link" href="#">Политика конфиденциальности</a>
+            </div>
+            <div class="footer__contacts">
+               <address class="footer__address">11710, улица Юности, дом 5 строение 4, офис 2</address>
+               <div class="footer__phone">
+                  <a class="footer-link" href="tel:+74995356434">+7 (499) 535-64-34</a>
+                  <a class="footer-link" href="tel:+74950050544">+7 (495) 005-05-44</a>
+               </div>
+               <div class="footer__email">
+                  <a class="footer-link" href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a>
+                  <a class="footer-link" href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a>
+               </div>
+            </div>
+            <div class="footer__social">
+               <a class="social__link" href="https://www.tripadvisor.ru" target="_blank">
+                  <img src="img/tripadvisor.png" alt="tripadvisor">
+               </a>
+               <a class="social__link" href="https://twitter.com" target="_blank">
+                  <img src="img/twitter.png" alt="twitter">
+               </a>
+               <a class="social__link" href="https://www.facebook.com" target="_blank">
+                  <img src="img/facebook.png" alt="facebook">
+               </a>
+               <a class="social__link" href="https://vk.com" target="_blank">
+                  <img src="img/vkontakte.png" alt="vkontakte">
+               </a>
+               <a class="social__link" href="https://plus.google.com" target="_blank">
+                  <img src="img/google-plus.png" alt="google-plus">
+               </a>
+            </div>
+            <img class="footer__sun" src="img/footer-sun.png" alt="sun">
+         </div>
+      </div>
+   </footer>
 </body>
 
 </html>
