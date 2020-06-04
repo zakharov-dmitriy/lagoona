@@ -323,8 +323,10 @@ body {
    font-weight: 700;
    color: #cc9933;
 
+   background-color: #fff;
    border: 1px solid #cc9933;
    border-radius: 12px;
+   transition: all 0.5s;
 }
 .accommodation__btn:hover {
    background: #cc9933;
