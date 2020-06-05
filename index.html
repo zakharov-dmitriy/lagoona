@@ -55,20 +55,29 @@
             <div class="reservation__inner">
                <div class="reservation__item">
                   <h3 class="reservation__title title">Быстрая бронь</h3>
-                  <form class="reservation__form">
-                     <input class="form__input" type="text" placeholder="Город">
-                     <input class="form__input" type="text" placeholder="Категория номера">
-                     <input class="form__input" type="text" placeholder="Дата заселения">
-                     <input class="form__input" type="text" placeholder="Количество ночей">
-                     <input class="form__input" type="text" placeholder="Количество гостей">
-                  </form>
-                  <div class="wrapper">
-                     <button class="reservation__btn">Найти номер</button>
-                     <div class="offers">
-                        <span class="number">9 756 </span>предложений доступно
+                  <form class="reservation__form" action="https://jsonplaceholder.typicode.com/posts" method="POST"
+                     autocomplete="off" target="_blank">
+                     <input class="form__input" type="text" required name="city" placeholder="Город">
+                     <select class="form__input select" name="room category">
+                        <option disabled selected>Категория номера</option>
+                        <option value="Стандартный">Стандартный</option>
+                        <option value="Улучшенный">Улучшенный</option>
+                        <option value="Семейный">Семейный</option>
+                        <option value="Люкс">Люкс</option>
+                     </select>
+                     <!-- <input class="form__input" type="text" name="room category" placeholder="Категория номера"> -->
+                     <input class="form__input date" type="date" required name="date" placeholder="Дата заселения">
+                     <input class="form__input nights" type="number" required name="nights" min="1" max="21"
+                        placeholder="Количество ночей">
+                     <input class="form__input" type="number" required name="guests" min="1" max="7"
+                        placeholder="Количество гостей">
+                     <div class="wrapper">
+                        <button class="reservation__btn" type="submit">Найти номер</button>
+                        <div class="offers">
+                           <span class="number">9 756 </span>предложений доступно
+                        </div>
                      </div>
-                  </div>
-
+                  </form>
                </div>
 
                <div class="reservation__item">
@@ -406,7 +415,7 @@
                <div class="contacts__item form">
                   <h3 class="contacts__title title">Напишите нам</h3>
                   <form class="contacts__form" action="https://jsonplaceholder.typicode.com/posts" method="POST"
-                     autocomplete="on">
+                     autocomplete="on" target="_blank">
                      <input class="form__item" type="text" required name="name" placeholder="Имя">
                      <input class="form__item" type="tel" required name="phone number" placeholder="+7">
                      <textarea class="form__item" required name="message" placeholder="Сообщение..." minlength="0"
@@ -432,15 +441,17 @@
                <a class="footer__link" href="#">Политика конфиденциальности</a>
             </div>
             <div class="footer__contacts">
-               <address class="footer__address">11710, улица Юности, дом 5 строение 4, офис 2</address>
-               <div class="footer__phone">
-                  <a class="footer-link" href="tel:+74995356434">+7 (499) 535-64-34</a>
-                  <a class="footer-link" href="tel:+74950050544">+7 (495) 005-05-44</a>
-               </div>
-               <div class="footer__email">
-                  <a class="footer-link" href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a>
-                  <a class="footer-link" href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a>
-               </div>
+               <address class="footer__address">
+                  11710, улица Юности, дом 5 строение 4, офис 2
+                  <div class="footer__phone">
+                     <a class="footer-link" href="tel:+74995356434">+7 (499) 535-64-34</a>
+                     <a class="footer-link" href="tel:+74950050544">+7 (495) 005-05-44</a>
+                  </div>
+                  <div class="footer__email">
+                     <a class="footer-link" href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a>
+                     <a class="footer-link" href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a>
+                  </div>
+               </address>
             </div>
             <div class="footer__social">
                <a class="social__link" href="https://www.tripadvisor.ru" target="_blank">
