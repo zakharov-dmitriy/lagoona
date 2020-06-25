@@ -149,7 +149,8 @@ body {
    -webkit-appearance: none;
    -moz-appearance: none;
 }
-.nights::-webkit-inner-spin-button {
+.nights::-webkit-inner-spin-button,
+.guests::-webkit-inner-spin-button {
    display: none;
 }
 .date {
